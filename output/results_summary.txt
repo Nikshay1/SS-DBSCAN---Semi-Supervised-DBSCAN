@@ -1,0 +1,17 @@
+============================================================
+  SS-DBSCAN Lab Project — Results Summary
+============================================================
+
+  Dataset : Letters Recognition (UCI)
+  Samples : 2000
+  Eps     : 4
+  MinPts  : 17
+
+Metric                 DBSCAN     SS-DBSCAN
+--------------------------------------------
+V-measure                0.09         0.136
+ARI                    0.0064        0.0022
+Silhouette             0.2932        0.1494
+Clusters                    2            18
+Noise                    1645          1752
+Time (s)                0.086         0.097
