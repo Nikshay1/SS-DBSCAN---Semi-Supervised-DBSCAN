@@ -47,6 +47,15 @@ Is_core = (neighbour_count >= MinPts)  AND  Is_important(point)
 
 The `Is_important` function encodes **human insight** about which points are meaningful enough to act as cluster centres. This restricts the set of core points, preventing small clusters from being absorbed into large ones.
 
+### Illustrative Example — Marble Balls Clustering
+
+The paper demonstrates the concept using 15 marble balls of varying sizes:
+
+![Marble Balls Clustering](output/marble_balls_clustering.png)
+
+- **(a) DBSCAN** treats all points equally → all 15 become core points → everything merges into **1 cluster**
+- **(b) SS-DBSCAN** only considers big marbles (radius > 2× mean) as important → only 3 core points → **3 meaningful clusters**
+
 ### Algorithm (Pseudocode)
 
 ```
